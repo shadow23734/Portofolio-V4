@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satria - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="data.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <canvas id="particle-canvas"></canvas>
+    <canvas id="meteor-canvas"></canvas>
+
+    <header class="header">
+        <a href="#welcome" class="logo">Satria</a>
+        <nav class="navbar">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#istri">My Istri</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="header-controls">
+            <div id="theme-switcher">
+                <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+            </div>
+            <div id="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="welcome" class="section">
+            <div class="welcome-content">
+                <h1 id="welcome-greeting" class="reveal"></h1>
+                <h2 class="role-text-container reveal">A <span id="role-text"></span><span class="cursor">|</span></h2>
+            </div>
+            <a href="#about" class="scroll-down">
+                <div class="mouse">
+                    <span></span>
+                </div>
+            </a>
+        </section>
+
+        <section id="about" class="section reveal">
+            <h2 class="section-title" data-jp="自己紹介">About Me</h2>
+            <div class="about-container">
+                <div id="photo-container" class="about-photo-wrapper" tabindex="0">
+                    <div class="about-photo">
+                        <img id="profile-photo" src="" alt="Profile Photo" class="shape-hexagon">
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p id="about-description"></p>
+                    <ul id="about-details" class="about-details-list"></ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section reveal">
+            <h2 class="section-title" data-jp="専門知識">Professional Skills</h2>
+            <div class="skills-container">
+                <div class="skills-card">
+                    <div class="skills-category">
+                        <h3>Frontend</h3>
+                        <div id="frontend-skills" class="skills-list"></div>
+                    </div>
+                </div>
+                <div class="skills-card">
+                    <div class="skills-category">
+                        <h3>Backend</h3>
+                        <div id="backend-skills" class="skills-list"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="istri" class="section reveal">
+            <h2 class="section-title" data-jp="私の嫁">My Istri</h2>
+            <div id="istri-gallery" class="istri-gallery"></div>
+        </section>
+
+        <section id="contact" class="section reveal">
+            <h2 class="section-title" data-jp="連絡先">Get in Touch</h2>
+            <div class="contact-container">
+                <p id="contact-intro" class="contact-intro"></p>
+                <div id="contact-channels" class="contact-list"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+             <p>©<span id="year"></span> - Satria.</p>
+        </div>
+    </footer>
+    
+    <a href="#welcome" class="back-to-top">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 5C12 5 12 5.00001 12 5.00001C12 5.00001 12 19 12 19M12 5C12 5 11.5 5.5 11 6C10 7 8 9 8 9M12 5C12 5 12.5 5.5 13 6C14 7 16 9 16 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a>
+
+</body>
+</html>
