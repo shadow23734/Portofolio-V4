@@ -2,7 +2,7 @@ const portfolioData = {
     welcome: {
         greeting: "Hello, I'am Satria",
         roles: [
-            "Prompt Engineer",
+            "Bot WhatsApp",
             "Frontend Developer",
             "Backend Developer",
             "API Developer",
